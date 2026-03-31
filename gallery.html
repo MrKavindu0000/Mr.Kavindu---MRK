@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Flair Bartender | Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="antialiased bg-dark text-white selection:bg-yellow-600 selection:text-white">
+
+    <div id="loader"><div class="spinner"></div></div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 glass shadow-lg text-white">
+        <div class="container mx-auto px-6 md:px-12 flex justify-between items-center py-4">
+            <a href="index.html" class="text-2xl cinzel font-bold text-white tracking-widest">
+                FLAIR<span class="text-gold">MASTER</span>
+            </a>
+            <div class="hidden md:flex space-x-8 items-center text-sm uppercase tracking-wider font-semibold">
+                <a href="index.html" class="nav-link text-gray-300 hover:text-white">Home</a>
+                <a href="about.html" class="nav-link text-gray-300 hover:text-white">About</a>
+                <a href="shows.html" class="nav-link text-gray-300 hover:text-white">Shows & Packages</a>
+                <a href="gallery.html" class="nav-link text-gray-300 hover:text-white">Gallery</a>
+                <a href="contact.html" class="px-6 py-2 border border-gold text-gold hover:bg-gold hover:text-dark transition-colors duration-300 rounded-sm">Book Now</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none">
+                <svg id="mobile-menu-icon" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden glass mt-4 absolute w-full left-0 py-4 flex flex-col items-center space-y-4 shadow-xl border-t border-gray-800">
+            <a href="index.html" class="mobile-link text-gray-300 hover:text-gold uppercase tracking-wider text-sm font-semibold">Home</a>
+            <a href="about.html" class="mobile-link text-gray-300 hover:text-gold uppercase tracking-wider text-sm font-semibold">About</a>
+            <a href="shows.html" class="mobile-link text-gray-300 hover:text-gold uppercase tracking-wider text-sm font-semibold">Shows</a>
+            <a href="gallery.html" class="mobile-link text-gray-300 hover:text-gold uppercase tracking-wider text-sm font-semibold">Gallery</a>
+            <a href="contact.html" class="mobile-link text-gold border border-gold px-6 py-2 rounded-sm uppercase tracking-wider text-sm font-semibold">Book Now</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-32 pb-20 bg-[#050505] relative border-b border-gray-900 border-gold border-opacity-30">
+        <div class="container mx-auto px-6 text-center z-10 relative">
+            <h1 class="cinzel text-5xl md:text-6xl font-bold mb-4 text-white" data-aos="fade-up">Photo <span class="text-gold">Gallery</span></h1>
+            <p class="text-gray-400 max-w-2xl mx-auto text-lg" data-aos="fade-up" data-aos-delay="100">මගේ හැකියාවන් සහ මීට පෙර පවත්වන ලද සුපිරි සංදර්ශන.</p>
+        </div>
+    </header>
+
+    <!-- Gallery Grid -->
+    <section class="py-16">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Gallery Item -->
+                <div class="relative overflow-hidden rounded-sm group aspect-square shadow-xl border border-gray-800 hover:border-gold transition-colors" data-aos="zoom-in" data-aos-delay="0">
+                    <img src="images/hero.png" alt="Fire Flair Magic" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                        <p class="cinzel text-xl text-gold font-bold uppercase tracking-wider">Fire Magic</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item -->
+                <div class="relative overflow-hidden rounded-sm group aspect-square shadow-xl border border-gray-800 hover:border-gold transition-colors" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="images/show.png" alt="Crowd Performance" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                        <p class="cinzel text-xl text-gold font-bold uppercase tracking-wider">Live Show</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item -->
+                <div class="relative overflow-hidden rounded-sm group aspect-square shadow-xl border border-gray-800 hover:border-gold transition-colors" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="images/cocktail.png" alt="Premium Cocktails" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                        <p class="cinzel text-xl text-gold font-bold uppercase tracking-wider">Master Mixology</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-8 border-t border-gray-900 mt-10 text-center">
+        <p class="text-gray-600 text-sm">&copy; 2026 Flair Master. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

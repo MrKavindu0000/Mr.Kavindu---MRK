@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Outfit:wght@300;400;600;800&display=swap');
+
+:root {
+  --gold: #D4AF37;
+  --dark: #0A0A0A;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--dark);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #111;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold);
+}
+
+/* Hero Section */
+.hero-gradient {
+  background: linear-gradient(to top, #0A0A0A 0%, transparent 100%);
+}
+.text-gold {
+  color: var(--gold);
+}
+.bg-gold {
+  background-color: var(--gold);
+}
+.border-gold {
+  border-color: var(--gold);
+}
+.hover\:bg-gold:hover {
+  background-color: var(--gold);
+}
+.hover\:text-dark:hover {
+  color: #0A0A0A;
+}
+
+/* Glowing Effects */
+.glow-gold {
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+}
+.glow-gold-hover:hover {
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.6);
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(20, 20, 20, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Navigation Links */
+.nav-link {
+  position: relative;
+  transition: all 0.3s ease;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--gold);
+  transition: all 0.3s ease;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Loader */
+#loader {
+  position: fixed;
+  inset: 0;
+  background: #0A0A0A;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease;
+}
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(212, 175, 55, 0.3);
+  border-radius: 50%;
+  border-top-color: var(--gold);
+  animation: spin 1s ease-in-out infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.image-container {
+  overflow: hidden;
+}
+.image-container img {
+  transition: transform 0.7s ease;
+}
+.image-container:hover img {
+  transform: scale(1.05);
+}

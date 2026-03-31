@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Flair Bartender | Home</title>
+    <meta name="description" content="Welcome to the official website of the best Professional Flair Bartender. Book shows and discover world-class bartending talent.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="antialiased selection:bg-yellow-600 selection:text-white">
+
+    <!-- Loader -->
+    <div id="loader"><div class="spinner"></div></div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4 text-white">
+        <div class="container mx-auto px-6 md:px-12 flex justify-between items-center">
+            <a href="index.html" class="text-2xl cinzel font-bold text-white tracking-widest">
+                FLAIR<span class="text-gold">MASTER</span>
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8 items-center text-sm uppercase tracking-wider font-semibold">
+                <a href="index.html" class="nav-link text-gray-300 hover:text-white">Home</a>
+                <a href="about.html" class="nav-link text-gray-300 hover:text-white">About</a>
+                <a href="shows.html" class="nav-link text-gray-300 hover:text-white">Shows & Packages</a>
+                <a href="gallery.html" class="nav-link text-gray-300 hover:text-white">Gallery</a>
+                <a href="contact.html" class="px-6 py-2 border border-gold text-gold hover:bg-gold hover:text-dark transition-colors duration-300 rounded-sm">Book Now</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none">
+                <svg id="mobile-menu-icon" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden glass mt-4 absolute w-full left-0 py-4 flex flex-col items-center space-y-4 shadow-xl border-t border-gray-800">
+            <a href="index.html" class="mobile-link text-gray-300 hover:text-gold uppercase tracking-wider text-sm font-semibold">Home</a>
+            <a href="about.html" class="mobile-link text-gray-300 hover:text-gold uppercase tracking-wider text-sm font-semibold">About</a>
+            <a href="shows.html" class="mobile-link text-gray-300 hover:text-gold uppercase tracking-wider text-sm font-semibold">Shows</a>
+            <a href="gallery.html" class="mobile-link text-gray-300 hover:text-gold uppercase tracking-wider text-sm font-semibold">Gallery</a>
+            <a href="contact.html" class="mobile-link text-gold border border-gold px-6 py-2 rounded-sm uppercase tracking-wider text-sm font-semibold">Book Now</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="images/hero.png" alt="Flair Bartender Juggling Fire" class="w-full h-full object-cover object-center scale-105 animate-pulse-slow filter brightness-50">
+            <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto" data-aos="fade-up">
+            <h2 class="text-gold tracking-[0.2em] uppercase text-sm md:text-lg mb-4 font-semibold">Professional Flair Bartender</h2>
+            <h1 class="cinzel text-5xl md:text-7xl lg:text-8xl font-bold mb-6 drop-shadow-2xl">Elevate Your <br/><span class="text-gold italic">Event Experience</span></h1>
+            <p class="text-gray-300 text-lg md:text-xl mb-10 font-light max-w-2xl mx-auto leading-relaxed">නරඹන්නන් මවිත කරවන සුපිරි Flair Bartending සංදර්ශන සමඟින් ඔබේ උත්සවය අමතක නොවන අත්දැකීමක් බවට පත් කරගන්න.</p>
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="gallery.html" class="px-8 py-3 bg-gold text-dark font-bold uppercase tracking-wider rounded-sm hover:bg-yellow-500 transition-colors duration-300 w-full sm:w-auto glow-gold-hover">Watch Talent</a>
+                <a href="shows.html" class="px-8 py-3 border border-gold text-gold font-bold uppercase tracking-wider rounded-sm hover:bg-gold hover:text-dark transition-all duration-300 w-full sm:w-auto">Book a Show</a>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 z-10 animate-bounce">
+            <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="py-24 bg-[#050505] relative border-b border-gray-900">
+        <div class="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-16">
+            <div class="w-full md:w-1/2 image-container rounded-sm shadow-2xl relative" data-aos="fade-right">
+                <div class="absolute inset-0 border-2 border-gold transform translate-x-4 translate-y-4 z-0"></div>
+                <img src="images/cocktail.png" alt="Colorful Cocktail Creation" class="w-full h-auto object-cover relative z-10">
+            </div>
+            <div class="w-full md:w-1/2" data-aos="fade-left">
+                <h3 class="text-gold tracking-[0.2em] uppercase text-sm mb-2 font-semibold">The Art of Mixology</h3>
+                <h2 class="cinzel text-4xl md:text-5xl font-bold mb-6">වෘත්තීය <span class="text-gold">Flair Bartending</span> කලාව</h2>
+                <p class="text-gray-400 mb-6 leading-relaxed">සාමාන්‍ය පානයක් විස්මිත කලා නිර්මාණයක් බවට පත් කරන ආකාරය නරඹන්න. සාද, මංගල උත්සව හෝ ආයතනික උත්සව සඳහා විශේෂයෙන් සැකසූ අපගේ සංදර්ශන ඔබේ අමුත්තන්ට පුදුමාකාර අත්දැකීමක් ලබා දෙනු ඇත.</p>
+                <div class="grid grid-cols-2 gap-6 mb-8 mt-10">
+                    <div>
+                        <h4 class="text-3xl cinzel font-bold text-white mb-2">5+</h4>
+                        <p class="text-gray-500 text-sm uppercase tracking-wider">Years Experience</p>
+                    </div>
+                    <div>
+                        <h4 class="text-3xl cinzel font-bold text-white mb-2">200+</h4>
+                        <p class="text-gray-500 text-sm uppercase tracking-wider">Events Completed</p>
+                    </div>
+                </div>
+                <a href="about.html" class="inline-flex items-center text-gold hover:text-white transition-colors duration-300 uppercase tracking-wider font-semibold text-sm">
+                    Read My Story
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-32 relative flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="images/show.png" alt="Live Bartending Show" class="w-full h-full object-cover object-center filter blur-[2px] brightness-50">
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-3xl mx-auto glass p-12 md:p-16 border-gold border rounded-sm" data-aos="zoom-in">
+            <h2 class="cinzel text-4xl md:text-5xl font-bold mb-6">ඔබේ මීළඟ උත්සවය වෙනස්ම <br/> අත්දැකීමක් කරමුද?</h2>
+            <p class="text-gray-300 mb-10 text-lg">අදම වෙන්කරවා ගන්න. ඉතාම සුවිශේෂී සාද, මංගලෝත්සව, සහ corporate events සඳහා විශිෂ්ඨතම සේවාව.</p>
+            <a href="contact.html" class="px-10 py-4 bg-gold text-dark font-bold uppercase tracking-wider rounded-sm hover:bg-yellow-500 transition-colors duration-300 glow-gold shadow-2xl inline-block">Contact & Book Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12 border-t border-gray-900">
+        <div class="container mx-auto px-6 text-center">
+            <a href="index.html" class="text-3xl cinzel font-bold text-white tracking-widest block mb-6">
+                FLAIR<span class="text-gold">MASTER</span>
+            </a>
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="#" class="text-gray-500 hover:text-gold transition-colors duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path></svg>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-gold transition-colors duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path></svg>
+                </a>
+            </div>
+            <p class="text-gray-600 text-sm">&copy; 2026 Flair Master. All rights reserved. Designed for Excellence.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
